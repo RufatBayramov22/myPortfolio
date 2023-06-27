@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!--swiper-->
+    <!--Swal-->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <!--swal-->
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <title>My|Portfolio</title>
+  </head>
+  <body>
+    <!--Start Header-->
+    <header class="header">
+      <div class="contanier">
+        <nav class="navBar">
+          <div class="logo">
+            <a href="./index.html">Rufat's Website</a>
+          </div>
+          <ul class="navList">
+            <li class="navItem">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="navItem">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="navItem" id="dropMenu">
+              Blog
+              <ul class="dropDown">
+                <li class="dropItem">
+                  <a href="#">Blog 1</a>
+                </li>
+                <li class="dropItem">
+                  <a href="#">Blog 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navItem">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="navItem">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="myPicture">
+            <button class="btn" id="myBtn">
+              <img
+                src="./assets/images/mySliderPhotos/myPhoto.jpg"
+                alt="Logo"
+              />
+            </button>
+            <div class="column">
+              <a href="#">Skills</a>
+              <a href="#">Contact </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--End Header-->
+
+    <main>
+      <!--Start About-->
+      <section class="about">
+        <div class="contanier">
+          <h2 class="title">My Slider</h2>
+          <div class="mySlider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/mySliderPhotos/Leo.photo.jpg"
+                    alt="messi"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/mySliderPhotos/Ronaldinho.photo.jpeg"
+                    alt="Ronaldinho"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/mySliderPhotos/Neymar.photo.jpg"
+                    alt="Neymar"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End About-->
+
+      <!---Start Services section-->
+      <section class="services">
+        <div class="contanier">
+          <h1 class="skills">My Soft Skills</h1>
+          <div class="tabs">
+            <div class="tabBtn">
+              <button class="btn" id="html">
+                <i class="fa-brands fa-html5"></i>Html
+              </button>
+
+              <button class="btn" id="css">
+                <i class="fa-brands fa-css3-alt"></i>Css
+              </button>
+
+              <button class="btn" id="js">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </button>
+
+              <button class="btn" id="react">
+                <i class="fa-brands fa-react"></i>React Js
+              </button>
+            </div>
+            <div class="tabBody active" id="html">
+              <p>
+                I was start learn the html 18 November.And I think i know not
+                very well but well.Because When I started to become a front-end
+                programmer, I had one goal: I will be one of the best, and I am
+                successfully on my way. My html knowledge is excellent.
+              </p>
+            </div>
+
+            <div class="tabBody" id="css">
+              <p>
+                I am really like css,because this language is very very
+                interesting, When do I start writing css? It's like relaxing and
+                de-stressing. It's very interesting. I don't know very well, but
+                I'll do my best to be the best.
+              </p>
+            </div>
+
+            <div class="tabBody" id="js">
+              <p>
+                Javascript is very difficult, but I know that I will be able to
+                do it, and I believe that one day I will love javascript.It is
+                very interesting but I dont know very well.One day i will be a
+                good developer.
+              </p>
+            </div>
+            <div class="tabBody" id="react">
+              <p>
+                Since I don't know React fully, I can't give any information,
+                but if I know javascript and other languages, I'll do it too.
+                Becoming a front-end programmer is the best decision of my life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---End servicev section-->
+      <section class="accordion">
+        <div class="contanier">
+          <h2 class="accardionTitle">My Accordion's</h2>
+          <div class="accordionInfo">
+            <div class="accordionItem">
+              <button class="accordionBtn" onclick="myFunction(1)">
+                Accordion 1
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="accordionBody" id="1">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam mollitia saepe fuga sapiente nisi. Maxime deserunt,
+                  perferendis, eaque eius nam illo aut incidunt repellendus
+                  beatae consequatur eum similique qui quia!
+                </p>
+              </div>
+            </div>
+            <div class="accordionItem">
+              <button class="accordionBtn" onclick="myFunction(2)">
+                Accordion 2
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="accordionBody" id="2">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam mollitia saepe fuga sapiente nisi. Maxime deserunt,
+                  perferendis, eaque eius nam illo aut incidunt repellendus
+                  beatae consequatur eum similique qui quia!
+                </p>
+              </div>
+            </div>
+            <div class="accordionItem">
+              <button class="accordionBtn" onclick="myFunction(3)">
+                Accordion 3
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="accordionBody" id="3">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam mollitia saepe fuga sapiente nisi. Maxime deserunt,
+                  perferendis, eaque eius nam illo aut incidunt repellendus
+                  beatae consequatur eum similique qui quia!
+                </p>
+              </div>
+            </div>
+            <div class="accordionItem">
+              <button class="accordionBtn" onclick="myFunction(4)">
+                Accordion 4
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="accordionBody" id="4">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam mollitia saepe fuga sapiente nisi. Maxime deserunt,
+                  perferendis, eaque eius nam illo aut incidunt repellendus
+                  beatae consequatur eum similique qui quia!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--MAP-->
+      <section class="map">
+        <div class="contanier">
+          <div class="row">
+            <div class="cardBox"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--END Map-->
+
+      <section class="contact">
+        <div class="contanier">
+          <div class="form">
+            <div class="contactInfo">
+              <h3 class="title">Lets's Get touch</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis sunt, eius pariatur quos facilis natus expedita
+              </p>
+              <div class="info">
+                <div class="information">
+                  <img
+                    src="./assets/images/contactPhoto/location.png"
+                    class="icon"
+                    alt="icon"
+                  />
+                  <a href="">92 Cherry Drive Uniondale,NY 11553</a>
+                </div>
+                <div class="information">
+                  <img
+                    src="./assets/images/contactPhoto/email.photo.png"
+                    class="icon"
+                    alt="icon"
+                  />
+                  <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+                </div>
+                <div class="information">
+                  <img
+                    src="./assets/images/contactPhoto/images.phone.png"
+                    class="icon"
+                    alt="icon"
+                  />
+                  <a href="tel:123456789">123-456-789</a>
+                </div>
+              </div>
+              <div class="socialBox">
+                <p>Send Me Message :</p>
+                <div class="socialIcon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="contactForm">
+              <span class="circleOne circle"></span>
+              <span class="circleTwo circle"></span>
+              <div class="error"></div>
+              <form id="form">
+                <h3 class="title">Contact Us</h3>
+                <div class="inputContanier focus">
+                  <input
+                    type="text"
+                    class="input"
+                    id="name"
+                    placeholder="Username"
+                  />
+
+                  <span>Username</span>
+                </div>
+                <div class="inputContanier">
+                  <input
+                    type="email"
+                    class="input"
+                    id="email"
+                    placeholder="Email"
+                  />
+
+                  <span>Email</span>
+                </div>
+                <div class="inputContanier">
+                  <input
+                    type="password"
+                    class="input"
+                    id="password"
+                    placeholder="Password"
+                  />
+
+                  <span>Phone</span>
+                </div>
+                <div class="inputContanier textarea">
+                  <textarea
+                    class="input"
+                    placeholder="Send Message"
+                    id="textarea"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--swal-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/74b243b478.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

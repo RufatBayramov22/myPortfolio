@@ -1,0 +1,137 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(19, 18, 18);
+  position: fixed;
+  z-index: 55;
+  .contanier {
+    
+    .navBar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .logo {
+        a {
+          position: absolute;
+          top: 30%;
+          color: #FF8303;
+          font-size: 24px;
+          &:hover{
+            color: #fff;
+            cursor: pointer;
+            transition: .3s all ease-in-out;
+        }
+        h2{
+      
+          }
+        }
+      }
+      .myPicture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          background:  #131212; 
+          width: 150px;
+          top: 65%;
+          left: 90%;
+          position: absolute;
+          margin-top: 19px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          display: none;
+          
+          &.active{
+            display: flex;
+          }
+
+          a{
+            color: #fff;
+            padding: 5px 10px;
+            &:hover{
+              color: #FF8303;
+              transition: .3s ease-in-out;
+            }         
+        }
+        }
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+     
+      }
+      .navList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        .navItem {
+          color: #fff;
+          cursor: pointer;
+          position: relative;
+          padding: 30px 0;
+          font-size: 18px;
+      
+
+          &:hover {
+            color: #FF8303;
+            transition: 0.4s ease-in;
+          }
+          a {
+            color: #fff;
+            padding: 20px 0;
+            &:hover {
+              color: #FF8303;
+              transition: 0.4s all;
+            }
+          }
+          .dropDown {
+            position: absolute;
+            top: 120px;
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            &.isOpen {
+              visibility: visible;
+              opacity: 1;
+              top: 70px;
+            }
+            .dropItem {
+              padding: 10px 5px;
+              transition: 0.3s;
+              a {
+                color: black;
+                &:hover{
+                  color: #C02425;
+                  transition: .3s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
